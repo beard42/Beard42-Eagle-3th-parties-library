@@ -1,0 +1,36 @@
+Edit Z80CTC-P.dev;
+Prefix 'IC';
+Package 'DIP-28';
+Value On;
+Add Z84C30 'G$1' Next 0 (0 0);
+Add PWRN 'P' Request 0 (-2 0.5);
+Connect \
+  'G$1.D0' '25' \
+  'G$1.D1' '26' \
+  'G$1.D2' '27' \
+  'G$1.D3' '28' \
+  'G$1.D4' '1' \
+  'G$1.D5' '2' \
+  'G$1.D6' '3' \
+  'G$1.D7' '4' \
+  'G$1.CE' '16' \
+  'G$1.CS0' '18' \
+  'G$1.CS1' '19' \
+  'G$1.M1' '14' \
+  'G$1.IORQ' '10' \
+  'G$1.RD' '6' \
+  'G$1.IEI' '13' \
+  'G$1.IEO' '11' \
+  'G$1.INT' '12' \
+  'G$1.CLK' '15' \
+  'G$1.RESET' '17' \
+  'G$1.CLK/TRG0' '23' \
+  'G$1.CLK/TRG1' '22' \
+  'G$1.CLK/TRG2' '21' \
+  'G$1.ZC/TO0' '7' \
+  'G$1.ZC/TO1' '8' \
+  'G$1.ZC/TO2' '9' \
+  'G$1.CLK/TRG3' '20' \
+  'P.GND' '5' \
+  'P.VCC' '24';
+

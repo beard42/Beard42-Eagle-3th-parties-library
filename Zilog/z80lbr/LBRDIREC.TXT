@@ -1,0 +1,55 @@
+EAGLE Version 3.55r3 Copyright (c) 1988-1999 CadSoft
+
+Directory D:LBRDIREC exported from BASE.lbr at 10/26/1999 21:01:15 
+
+Device     Prefix Value Package   Contents
+
+Z80CPU-F   IC     On    QFP-44    1*NC4      1*PWRN     1*Z84C00  
+Z80CPU-P   IC     On    DIP-40    1*PWRN     1*Z84C00  
+Z80CPU-S   IC     On    S44       1*NC4      1*PWRN     1*Z84C00  
+Z80CPU-V   IC     On    PLCC-44   1*NC4      1*PWRN     1*Z84C00  
+Z80CTC-F   IC     On    QFP-44    1*NC16     1*PWRN     1*Z84C30  
+Z80CTC-P   IC     On    DIP-28    1*PWRN     1*Z84C30  
+Z80CTC-S   IC     On    S44       1*NC16     1*PWRN     1*Z84C30  
+Z80CTC-V   IC     On    PLCC-44   1*NC16     1*PWRN     1*Z84C30  
+Z80DMA-P   IC     On    DIP-40    1*PWRN     1*Z84C10  
+Z80DMA-S   IC     On    S44       1*NC3      1*PWRN     1*Z84C10V 
+Z80DMA-V   IC     On    PLCC-44   1*NC3      1*PWRN     1*Z84C10V 
+Z80DMANS   IC     On    S44       1*NC3      1*PWR2GND  1*Z84C10  
+Z80DMANV   IC     On    PLCC-44   1*NC3      1*PWR2GND  1*Z84C10  
+Z80PIO-F   IC     On    QFP-44    1*NC4      1*PWRN     1*Z84C20  
+Z80PIO-P   IC     On    DIP-40    1*PWRN     1*Z84C20  
+Z80PIO-S   IC     On    S44       1*NC4      1*PWRN     1*Z84C20  
+Z80PIO-V   IC     On    PLCC-44   1*NC4      1*PWRN     1*Z84C20  
+Z80SIO-0   IC     On    DIP-40    1*PWRN     1*Z84C40  
+Z80SIO-1   IC     On    DIP-40    1*PWRN     1*Z84C41  
+Z80SIO-2   IC     On    DIP-40    1*PWRN     1*Z84C42  
+Z80SIO-3   IC     On    QFP-44    1*NC3      1*PWRN     1*Z84C43  
+Z80SIO-4   IC     On    PLCC-44   1*NC3      1*PWRN     1*Z84C43  
+Z80SIO4S   IC     On    S44       1*NC3      1*PWRN     1*Z84C43  
+
+Packages:
+
+DIP-28
+DIP-40
+PLCC-44
+QFP-44
+S44
+
+Symbols:
+
+NC3
+NC4
+NC16
+PWR2GND
+PWRN
+Z84C00
+Z84C10
+Z84C10V
+Z84C20
+Z84C30
+Z84C40
+Z84C41
+Z84C42
+Z84C43
+

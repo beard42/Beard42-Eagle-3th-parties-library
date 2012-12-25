@@ -1,0 +1,48 @@
+Edit Z80SIO-0.dev;
+Prefix 'IC';
+Package 'DIP-40';
+Value On;
+Add Z84C40 'G$1' Next 0 (0 0);
+Add PWRN 'P' Request 0 (-2 0.5);
+Connect \
+  'G$1.D0' '40' \
+  'G$1.D1' '1' \
+  'G$1.D2' '39' \
+  'G$1.D3' '2' \
+  'G$1.D4' '38' \
+  'G$1.D5' '3' \
+  'G$1.D6' '37' \
+  'G$1.D7' '4' \
+  'G$1.CE' '35' \
+  'G$1.RESET' '21' \
+  'G$1.M1' '8' \
+  'G$1.IORQ' '36' \
+  'G$1.RD' '32' \
+  'G$1.CLK' '20' \
+  'G$1.INT' '5' \
+  'G$1.IEI' '6' \
+  'G$1.IEO' '7' \
+  'G$1.RXDA' '12' \
+  'G$1.RXCA' '13' \
+  'G$1.TXDA' '15' \
+  'G$1.TXCA' '14' \
+  'G$1.SYNCA' '11' \
+  'G$1.W/RDYA' '10' \
+  'G$1.RTSA' '17' \
+  'G$1.CTSA' '18' \
+  'G$1.DTRA' '16' \
+  'G$1.DCDA' '19' \
+  'G$1.RXDB' '28' \
+  'G$1.RXTXCB' '27' \
+  'G$1.TXDB' '26' \
+  'G$1.SYNCB' '29' \
+  'G$1.W/RDYB' '30' \
+  'G$1.RTSB' '24' \
+  'G$1.CTSB' '23' \
+  'G$1.DTRB' '25' \
+  'G$1.DCDB' '22' \
+  'G$1.C/D\' '33' \
+  'G$1.B/A\' '34'\
+  'P.VCC' '9' \
+  'P.GND' '31';
+

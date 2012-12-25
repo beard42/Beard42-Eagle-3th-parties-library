@@ -1,0 +1,19 @@
+Update Eagle Library für steckbare Phoenix-Klemmen im Raster 3.81mm
+(con-phoenix-381_l.lbr)
+
+Die Bibliothek enthällt jetzt zusätzlich zu den Grundgehäusen auch
+Gegenstecker. Diese können im Schaltplan als Zubehör eingefügt und im Board
+an der gleichen Position wie das Grundgehäuse positioniert werden.
+Sie werden dann bei Erstellung einer Dokummentation im Betückungsplan und in einer z.B. mit dem bom.ulp erstellten Stückliste mit berücksichtig.
+Ich habe diesen Versuch in Verbindung mit Eagle3D von Matthias Weißer
+(http://www.matwei.de) gestartet.
+Beim Einsatz der Klemmen taucht immer wieder die Anforderung auf, die Pin's
+in umgekehrter Reihenfolge zu Nummerieren (reverse pin order). Zum Beispiel bei einem Hutschienengehäuse Klemmen mit Kabelabgang nach Oben
+und Unten und Nummerierung von Links nach Rechts.
+Sollten auch dafür zusätzliche Packages angelegt werden?
+Eure Meinung und Anregungen dazu und zur jetzigen Form der Lib ist gefragt.
+(evtl. in e.u.ger?)
+
+Ciao Friedrich
+
+fbleikamp@web.de (Privat)

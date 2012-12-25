@@ -1,0 +1,53 @@
+Edit Z80SIO-3.dev;
+Prefix 'IC';
+Package 'QFP-44';
+Value On;
+Add Z84C43 'G$1' Next 0 (0 0);
+Add PWRN 'P' Request 0 (-2 0.5);
+Add NC3 'X' Request 0 (2 1);
+Connect \
+'G$1.DTRA' '1' \
+'G$1.RTSA' '2' \
+'G$1.CTSA' '3' \
+'G$1.DCDA' '4' \
+'G$1.CLK' '5' \
+'G$1.RESET' '6' \
+'G$1.DCDB' '7' \
+'G$1.CTSB' '8' \
+'G$1.RTSB' '9' \
+'G$1.DTRB' '10' \
+'G$1.TXDB' '11' \
+'G$1.TXCB' '12' \
+'G$1.RXCB' '13' \
+'G$1.RXDB' '14' \
+'G$1.SYNCB' '15' \
+'G$1.W/RDYB' '16' \
+'X.NC@1' '17' \
+'P.GND' '18' \
+'G$1.RD' '19' \
+'G$1.C/D\' '20' \
+'G$1.B/A\' '21' \
+'G$1.CE' '22' \
+'G$1.IORQ' '23' \
+'G$1.D6' '24' \
+'G$1.D4' '25' \
+'G$1.D2' '26' \
+'G$1.D0' '27' \
+'X.NC@2' '28' \
+'G$1.D1' '29' \
+'G$1.D3' '30' \
+'G$1.D5' '31' \
+'G$1.D7' '32' \
+'G$1.INT' '33' \
+'G$1.IEI' '34' \
+'G$1.IEO' '35' \
+'G$1.M1' '36' \
+'P.VCC' '37' \
+'G$1.W/RDYA' '38' \
+'X.NC@3' '39' \
+'G$1.SYNCA' '40' \
+'G$1.RXDA' '41' \
+'G$1.RXCA' '42' \
+'G$1.TXCA' '43' \
+'G$1.TXDA' '44';
+

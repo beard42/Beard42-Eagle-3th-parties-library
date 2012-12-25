@@ -1,0 +1,57 @@
+Edit Z80SIO-4.dev;
+Prefix 'IC';
+Package 'PLCC-44';
+Value On;
+Add Z84C43 'G$1' Next 0 (0 0);
+Add PWRN 'P' Request 0 (-2 0.5);
+Add NC3 'X' Request 0 (2 1);
+Connect \
+'G$1.D0' '1' \
+'G$1.D1' '2' \
+'G$1.D3' '3' \
+'G$1.D5' '4' \
+'G$1.D7' '5' \
+'G$1.INT' '6' \
+'G$1.IEI' '7' \
+'G$1.IEO' '8' \
+'G$1.M1' '9' \
+'P.VCC' '10' \
+'G$1.W/RDYA' '11' \
+'G$1.SYNCA' '12' \
+'G$1.RXDA' '13' \
+'G$1.RXCA' '14' \
+'G$1.TXCA' '15' \
+'G$1.TXDA' '16' \
+'X.NC@1' '17' \
+'G$1.DTRA' '18' \
+'G$1.RTSA' '19' \
+'G$1.CTSA' '20' \
+'G$1.DCDA' '21' \
+'G$1.CLK' '22' \
+'G$1.RESET' '23' \
+'G$1.DCDB' '24' \
+'G$1.CTSB' '25' \
+'G$1.RTSB' '26' \
+'G$1.DTRB' '27' \
+'X.NC@2' '28' \
+'X.NC@3' '29' \
+'G$1.TXDB' '30' \
+'G$1.TXCB' '31' \
+'G$1.RXCB' '32' \
+'G$1.RXDB' '33' \
+'G$1.SYNCB' '34' \
+'G$1.W/RDYB' '35' \
+'P.GND' '36' \
+'G$1.RD' '37' \
+'G$1.C/D\' '38' \
+'G$1.B/A\' '39' \
+'G$1.CE' '40' \
+'G$1.IORQ' '41' \
+'G$1.D6' '42' \
+'G$1.D4' '43' \
+'G$1.D2' '44';
+
+
+
+
+

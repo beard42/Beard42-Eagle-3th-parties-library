@@ -1,0 +1,30 @@
+Grid inch 0.1 1 inch;
+
+Edit PWRN.sym;
+Pin 'GND' Pwr None Middle R90 Pad 0 (0 -0.4);
+Pin 'VCC' Pwr None Middle R270 Pad 0 (0 0.4);
+Layer 95;
+Change Size 0.05;
+Change Ratio 8;
+Text 'GND' R90 (0.075 -0.3);
+Text 'VCC' R90 (0.075 0.2);
+Change Size 0.07;
+Text '>NAME' R0 (-0.025 -0.025);
+Layer 96;
+Text '>VALUE' R0 (-0.025 -0.125);
+
+Edit PWR2GND.sym;
+Pin 'VCC' Pwr None Middle R270 Pad 0 (0 0.4);
+Pin 'GND@1' Pwr None Middle R90 Pad 0 (-0.1 -0.4);
+Pin 'GND@2' Pwr None Middle R90 Pad 0 (0.1 -0.4);
+Layer 95;
+Change Size 0.05;
+Change Ratio 8;
+Text 'VCC' R90 (0.075 0.175);
+Text 'GND' R90 (-0.025 -0.3);
+Text 'GND' R90 (0.175 -0.3);
+Change Size 0.07;
+Text '>NAME' R0 (0 -0.05);
+Layer 96;
+Text '>VALUE' R0 (0 -0.15);
+
