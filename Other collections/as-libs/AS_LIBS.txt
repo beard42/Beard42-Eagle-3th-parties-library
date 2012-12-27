@@ -1,0 +1,34 @@
+EAGLE Version 3.55 Copyright (c) 1988-1998 CadSoft
+==================================================================
+HD15_B.lbr
+
+High-density 3-row D-SUB connectors / 15 pin
+
+==================================================================
+TSSGCMOS.lbr
+
+TOSHIBA single-gate CMOS devices (SMD packages).
+
+==================================================================
+KEY_B.lbr
+
+A few pushkeys and a switch I found in the catalogue of 
+Conrad Elektronik (German, www.conrad.de)
+
+==================================================================
+ATMEL.lbr
+
+ATMEL AVR Microcontrollers, designed from the original ATMEL
+data sheets (www.atmel.com).
+
+==================================================================
+
+Disclaimer:
+Any usage of these devices is at your own risk. They have been
+carefully designed, but may still contain errors, especially
+since they have not been used yet in a real PCB layout.
+This library may be used and copied free of charge. In case
+any error is detected, please contact the author:
+
+Author/E-Mail : Andreas.Schulz@ri.dasa.de
+

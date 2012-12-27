@@ -1,0 +1,51 @@
+EAGLE Version 3.55 Copyright (c) 1988-1998 CadSoft
+
+Directory project1\hd15 exported from HD15_B.lbr at 01.08.1999 22:06:58 
+
+High-density 3-row D-SUB connectors / 15 pin
+HD* devices are neutral, VGA* devices have added VGA graphics
+connector signal labels.
+*_NP devices are symbols without PCB elements (for free-hand wiring),
+non-*_NP devices are fro PCB mounting.
+*F are female (sockets), *M are male (plugs) connectors (though I have
+not seen any male HD15 PCB connector yet, so keep in mind that the 
+HD15M/VGAM PCB layouts are just clever guessing !)
+
+Disclaimer:
+Any usage of these devices is at your own risk. They have been
+carefully designed, but may still contain errors, especially
+since they have not been used yet in a real PCB layout.
+This library may be used and copied free of charge. In case
+any error is detected, please contact the author:
+
+Author/E-Mail : Andreas.Schulz@ri.dasa.de
+
+Device     Prefix Value Package   Contents
+
+HD15F      X      On    HD15F     1*HD15F   
+HD15M      X      On    HD15M     1*HD15M   
+VGAF       X      On    HD15F     1*VGAF    
+VGAM       X      On    HD15M     1*VGAM    
+
+HD15F_NP   X      On    NOTONPCB  1*VGAF_NP 
+HD15M_NP   X      On    NOTONPCB  1*HD15M_NP
+VGAF_NP    X      On    NOTONPCB  1*VGAF_NP 
+VGAM_NP    X      On    NOTONPCB  1*VGAM_NP 
+
+Packages:
+
+HD15F    (from TEKCON 1285-15S, www.tekcon.com, datasheet)
+HD15M    (no datasheet, just HD15F reversed)
+NOTONPCB (dummy empty package for schematic symbol only)
+
+Symbols:
+
+HD15F
+HD15F_NP
+HD15M
+HD15M_NP
+VGAF
+VGAF_NP
+VGAM
+VGAM_NP
+

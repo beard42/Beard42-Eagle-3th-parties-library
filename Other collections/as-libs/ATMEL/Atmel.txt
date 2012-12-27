@@ -1,0 +1,73 @@
+EAGLE Version 3.55 Copyright (c) 1988-1998 CadSoft
+
+Directory project1\ATMEL exported from ATMEL.lbr at 01.08.1999 22:35:09 
+
+ATMEL AVR Microcontrollers, designed from the original ATMEL
+data sheets (www.atmel.com); packages taken from DIL.LIB and
+SMD_IC.LIB. Default package is DIL; SMD packages are also included.
+The S1200 SMD is available in both SOIC20 amd SSOP20, the other 
+devices in SOIC* resp. PLCC only.
+The *S devices were necessary due to the different pin numbers
+of PLCC44 vs. DIL40.
+The *X have the symbols split into several groups, which may be
+useful sometimes, in contrast to the plain devices with only one
+block for the whole chip.
+
+Disclaimer:
+Any usage of these devices is at your own risk. They have been
+carefully designed, but may still contain errors, especially
+since they have not been used yet in a real PCB layout.
+This library may be used and copied free of charge. In case
+any error is detected, please contact the author:
+
+Author/E-Mail : Andreas.Schulz@ri.dasa.de
+
+Device     Prefix Value Package   Contents
+
+AT90S1200  IC     On    DIL20     1*S1200   
+AT90S1200X IC     On    DIL20     1*PBR_1200 1*PD_1200  1*PWR      1*XTAL    
+AT90S2313  IC     On    DIL20     1*S2313   
+AT90S2313X IC     On    DIL20     1*PBR_2313 1*PD_2313  1*PWR      1*XTAL    
+AT90S2323  IC     On    DIL8      1*S2323   
+AT90S2323X IC     On    DIL8      1*PBR_2323 1*PWR      1*XTAL    
+AT90S2343  IC     On    DIL8      1*S2343   
+AT90S2343X IC     On    DIL8      1*PBR2343  1*PWR     
+AT90S4414  IC     On    DIL40     1*S4414   
+AT90S4414S IC     On    PLCC44    1*S4414   
+AT90S4414X IC     On    DIL40     1*OTH_4485 1*PA_4485  1*PBR_4485 1*PC_4485  1*PD_4485  1*PWR      1*XTAL    
+AT90S8515  IC     On    DIL40     1*S4414   
+AT90S8515S IC     On    PLCC44    1*S4414   
+AT90S8515X IC     On    DIL40     1*OTH_4485 1*PA_4485  1*PBR_4485 1*PC_4485  1*PD_4485  1*PWR      1*XTAL    
+
+Packages:
+
+DIL8
+DIL20
+DIL40
+PLCC44
+SOIC8
+SOIC20
+SSOP20
+TQFP44
+
+Symbols:
+
+OTH_4485
+PA_4485
+PBR2343
+PBR_1200
+PBR_2313
+PBR_2323
+PBR_4485
+PC_4485
+PD_1200
+PD_2313
+PD_4485
+PWR
+S1200
+S2313
+S2323
+S2343
+S4414
+XTAL
+

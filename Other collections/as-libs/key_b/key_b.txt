@@ -1,0 +1,37 @@
+EAGLE Version 3.55 Copyright (c) 1988-1998 CadSoft
+
+Directory project1\key_b exported from KEY_B.lbr at 01.08.1999 23:06:39 
+
+A few pushkeys and a switch I found in the catalogue of 
+Conrad Elektronik (German, www.conrad.de)
+
+Disclaimer:
+Any usage of these devices is at your own risk. They have been
+carefully designed, but may still contain errors, especially
+since they have not been used yet in a real PCB layout.
+This library may be used and copied free of charge. In case
+any error is detected, please contact the author:
+
+Author/E-Mail : Andreas.Schulz@ri.dasa.de
+
+Device     Prefix Value Package   Contents
+
+10XX       S      On    B3F-10XX  1*TS2     Tiny pushbutton, borrowed from KEYOMRON.LBR
+C_SSH203   S      On    SW203     1*SS_203  2 contacts/3 pos. slide switch
+MKEY_RD    S      On    MKEY_RD   1*TS1     small square pushbutton with round pin
+                                            (4mm dia./5 mm high) in the middle 
+MKEY_SQ    S      On    MKEY_SQ   1*TS1     same without the pin
+
+Packages:
+
+B3F-10XX
+MKEY_RD
+MKEY_SQ
+SW203
+
+Symbols:
+
+SS_203
+TS1
+TS2
+

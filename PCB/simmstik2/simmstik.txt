@@ -1,0 +1,36 @@
+EAGLE Version 4.03 Copyright (c) 1988-2001 CadSoft
+
+
+SimmStick(R) board outlines with edge connector pads, standard 
+first two rows of holes and drill holes.
+
+Disclaimer:
+Any usage of this library and its contents are at your own risk.
+They have been carefully designed, but may still contain errors.
+This library may be used and copied free of charge. In case
+any error is detected, please contact the author:
+
+Author:    Arthur Clarke (Xtreme Performance Coatings)
+E-Mail :   aarc@chariot.net.au
+
+Device     Prefix Value Package   Contents
+
+SIMM0600   ''     On    SS0600
+SIMM1000   ''     On    SS1000
+SIMM1500   ''     On    SS1500
+SIMM2000   ''     On    SS2000
+SIMM2500   ''     On    SS2500
+SIMM3000   ''     On    SS3000
+
+Packages:
+
+SS0600
+SS1000
+SS1500
+SS2000
+SS2500
+SS3000
+
+Symbols:
+
+SIMM1000

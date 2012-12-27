@@ -1,0 +1,132 @@
+Set Wire_Style 2;
+Grid mil 200 2 mm;
+Layer   1 Top;
+Layer   2 Route2;
+Layer   3 Route3;
+Layer   4 Route4;
+Layer   5 Route5;
+Layer   6 Route6;
+Layer   7 Route7;
+Layer   8 Route8;
+Layer   9 Route9;
+Layer  10 Route10;
+Layer  11 Route11;
+Layer  12 Route12;
+Layer  13 Route13;
+Layer  14 Route14;
+Layer  15 Route15;
+Layer  16 Bottom;
+Layer  17 Pads;
+Layer  18 Vias;
+Layer  19 Unrouted;
+Layer  20 Dimension;
+Layer  21 tPlace;
+Layer  22 bPlace;
+Layer  23 tOrigins;
+Layer  24 bOrigins;
+Layer  25 tNames;
+Layer  26 bNames;
+Layer  27 tValues;
+Layer  28 bValues;
+Layer  29 tStop;
+Layer  30 bStop;
+Layer  31 tCream;
+Layer  32 bCream;
+Layer  33 tFinish;
+Layer  34 bFinish;
+Layer  35 tGlue;
+Layer  36 bGlue;
+Layer  37 tTest;
+Layer  38 bTest;
+Layer  39 tKeepout;
+Layer  40 bKeepout;
+Layer  41 tRestrict;
+Layer  42 bRestrict;
+Layer  43 vRestrict;
+Layer  44 Drills;
+Layer  45 Holes;
+Layer  46 Milling;
+Layer  47 Measures;
+Layer  48 Document;
+Layer  49 Reference;
+Layer  51 tDocu;
+Layer  52 bDocu;
+Layer 21;
+Wire  0.3 (0 -64.25) (76.2 -64.25) (76.2 64.25) (0 64.25) \
+      (0 -64.25);
+Layer 49;
+Wire  0 (0 0) (76.2 0);
+Wire  0.1 (1.79 50) (1.79 -50) (3.29 -50) (3.29 50) \
+      (1.79 50);
+Hole 0.6096 (2.54 61.25)
+Hole 0.6096 (2.54 -61.25)
+Layer 49;
+Wire  0.1 (6.87 50) (6.87 -50) (8.37 -50) (8.37 50) \
+      (6.87 50);
+Hole 0.6096 (7.62 61.25)
+Hole 0.6096 (7.62 -61.25)
+Layer 49;
+Wire  0.1 (11.95 50) (11.95 -50) (13.45 -50) (13.45 50) \
+      (11.95 50);
+Hole 0.6096 (12.7 61.25)
+Hole 0.6096 (12.7 -61.25)
+Layer 49;
+Wire  0.1 (17.03 50) (17.03 -50) (18.53 -50) (18.53 50) \
+      (17.03 50);
+Hole 0.6096 (17.78 61.25)
+Hole 0.6096 (17.78 -61.25)
+Layer 49;
+Wire  0.1 (22.11 50) (22.11 -50) (23.61 -50) (23.61 50) \
+      (22.11 50);
+Hole 0.6096 (22.86 61.25)
+Hole 0.6096 (22.86 -61.25)
+Layer 49;
+Wire  0.1 (27.19 50) (27.19 -50) (28.69 -50) (28.69 50) \
+      (27.19 50);
+Hole 0.6096 (27.94 61.25)
+Hole 0.6096 (27.94 -61.25)
+Layer 49;
+Wire  0.1 (32.27 50) (32.27 -50) (33.77 -50) (33.77 50) \
+      (32.27 50);
+Hole 0.6096 (33.02 61.25)
+Hole 0.6096 (33.02 -61.25)
+Layer 49;
+Wire  0.1 (37.35 50) (37.35 -50) (38.85 -50) (38.85 50) \
+      (37.35 50);
+Hole 0.6096 (38.1 61.25)
+Hole 0.6096 (38.1 -61.25)
+Layer 49;
+Wire  0.1 (42.43 50) (42.43 -50) (43.93 -50) (43.93 50) \
+      (42.43 50);
+Hole 0.6096 (43.18 61.25)
+Hole 0.6096 (43.18 -61.25)
+Layer 49;
+Wire  0.1 (47.51 50) (47.51 -50) (49.01 -50) (49.01 50) \
+      (47.51 50);
+Hole 0.6096 (48.26 61.25)
+Hole 0.6096 (48.26 -61.25)
+Layer 49;
+Wire  0.1 (52.59 50) (52.59 -50) (54.09 -50) (54.09 50) \
+      (52.59 50);
+Hole 0.6096 (53.34 61.25)
+Hole 0.6096 (53.34 -61.25)
+Layer 49;
+Wire  0.1 (57.67 50) (57.67 -50) (59.17 -50) (59.17 50) \
+      (57.67 50);
+Hole 0.6096 (58.42 61.25)
+Hole 0.6096 (58.42 -61.25)
+Layer 49;
+Wire  0.1 (62.75 50) (62.75 -50) (64.25 -50) (64.25 50) \
+      (62.75 50);
+Hole 0.6096 (63.5 61.25)
+Hole 0.6096 (63.5 -61.25)
+Layer 49;
+Wire  0.1 (67.83 50) (67.83 -50) (69.33 -50) (69.33 50) \
+      (67.83 50);
+Hole 0.6096 (68.58 61.25)
+Hole 0.6096 (68.58 -61.25)
+Layer 49;
+Wire  0.1 (72.91 50) (72.91 -50) (74.41 -50) (74.41 50) \
+      (72.91 50);
+Hole 0.6096 (73.66 61.25)
+Hole 0.6096 (73.66 -61.25)

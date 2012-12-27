@@ -1,0 +1,53 @@
+EAGLE Version 3.55 Copyright (c) 1988-1998 CadSoft
+
+Directory project1\Tsgcmos exported from TSSGCMOS.lbr at 28.07.1999 00:15:02 
+
+TOSHIBA single-gate CMOS devices (SMD packages).
+Devices are produced in large and small packages, with the large
+packages defined as default for this library. Functions are
+equivalent to the corresponding 40xx/45xx standard CMOS gates
+as shown in the symbols.
+
+Disclaimer:
+Any usage of these devices is at your own risk. They have been
+carefully designed, but may still contain errors, especially
+since they have not been used yet in a real PCB layout.
+This library may be used and copied free of charge. In case
+any error is detected, please contact the author:
+
+Author/E-Mail : Andreas.Schulz@ri.dasa.de
+
+Device     Prefix Value Package   Contents
+
+TC4S01     IC     On    SSOP5P09  1*4001     1*PWRN    
+TC4S11     IC     On    SSOP5P09  1*4011     1*PWRN    
+TC4S30     IC     On    SSOP5P09  1*4030     1*PWRN    
+TC4S66     IC     On    SSOP5P09  1*4066     1*PWRN    
+TC4S71     IC     On    SSOP5P09  1*4071     1*PWRN    
+TC4S81     IC     On    SSOP5P09  1*4081     1*PWRN    
+TC4S584    IC     On    SSOP5P09  1*4584     1*PWRN    
+TC4SU69    IC     On    SSOP5P09  1*4069     1*PWRN    
+TC4W53F    IC     On    SOP8P127  1*4053     1*PWR+VEE 
+TC4W66F    IC     On    SOP8P127  2*4066     1*PWRN    
+
+Packages:
+
+SOP8P127
+SSOP5P06
+SSOP5P09
+SSOP8P06
+
+Symbols:
+
+4001
+4011
+4030
+4053
+4066
+4069
+4071
+4081
+4584
+PWR+VEE
+PWRN
+

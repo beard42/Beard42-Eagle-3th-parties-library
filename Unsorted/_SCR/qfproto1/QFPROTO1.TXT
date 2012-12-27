@@ -1,0 +1,15 @@
+QFPROTO1.SCR is an Eagle script file which demonstrates an example of
+creating a library package for 100-pin QFP test and burn-in socket.
+
+Through-hole pads are named 1..100. and SMD pad names are prefixed 'S'.
+
+Package can be used as-is, or connected to a 100-pin symbol, such as an
+SMC FDC37C665 Super-I/O chip, and used for evaluation / prototyping.
+
+All traces created by the autorouter will connect to the pads.  Notice
+also a small rectangle directly over the SMD footprint, in layer tRESTRICT.
+
+19.9.1998
+Douglas Beattie Jr.
+<beattidp@ieee.org>
+

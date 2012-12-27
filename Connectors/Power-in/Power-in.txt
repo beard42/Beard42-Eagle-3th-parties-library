@@ -1,0 +1,10 @@
+Library Connectors - Mains, Power and Multipole v1.0
+
+JACK-PMS       Low voltage DC power connector.
+POWER-PM       In voltage AC power and earth connector.
+
+
+José Vieira
+op19355@mail.telepac.pt
+Escola Secundária de Estremoz
+Portugal

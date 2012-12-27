@@ -1,0 +1,5 @@
+﻿EAGLE Library ChangeLog
+=======================
+
+2012-12-27
+  Initial revision

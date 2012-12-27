@@ -1,0 +1,13 @@
+SCH_PORT.lbr:
+This log is intended to show libraries changes and 
+updates as they occur. When these do occur the dtae and
+respective changes will be so logged.
+
+**********************************************************
+GENESIS:  5/10/98
+RLP:
+Description:
+This library contains varoius symbols for off page connections for
+schematic entry and creation. The symbols are off page connectors
+and heirarical sheet block. 
+**********************************************************

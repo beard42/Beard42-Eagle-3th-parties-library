@@ -1,0 +1,3 @@
+ Library of EagleCAD components used by NBitWonder. The parts are available for your use, free of charge. While alot of work is put into the design of these parts, we offer no guarantees that the parts are free of errors, or that they are the correct parts for your specific application. As such, by downloading this Library, you acknowledge that you are using this Library at your own risk. NBitWonder will not be responsible for any faulty PCBs. Always check your parts against a 1:1 printout.
+ 
+ Licensing: CC v3.0 Share-Alike (http://creativecommons.org/licenses/by-sa/3.0/). You are welcome to use this library for commercial purposes. For attribution, we ask that you make mention of our Eagle libraries to your site audiences.

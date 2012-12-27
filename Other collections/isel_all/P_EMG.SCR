@@ -1,0 +1,23 @@
+Set Wire_Style 2;
+Grid inch 0.1 1 inch;
+Layer 110 Platine;
+Edit P_EMG_L.pac;
+Layer 20;
+Wire  0 (0 0) (3.94488 0) (3.94488 9.83858) (0 9.83858) \
+      (0 0);
+Layer 21;
+Wire  0.006 (0.07874 0) (0.07874 9.83858);
+Wire  0.006 (3.86614 0) (3.86614 9.83858);
+Wire  0.01181 (3.94488 0) (3.94488 9.83858) (3.86614 9.83858) 
+(0.07874 9.83858) \
+      (0 9.83858) (0 0) (0.07874 0) (3.86614 0) \
+      (3.94488 0);
+Layer 51;
+Change Size 0.07874;
+Change Ratio 12;
+Text '100,2mm x 250mm = 2,51dmý' R0 (0.19685 9.66142);
+Layer 51;
+Change Size 0.07874;
+Change Ratio 12;
+Text 'Platine zum ISEL- Europa- Modulgeh„use:' R0 (0.35433 9.22835);
+ 

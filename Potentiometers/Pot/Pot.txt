@@ -1,0 +1,17 @@
+Library Potentiometers v1.0
+
+POTH_1         PCB Potentiometer Mounted Condutive Plastic, 1x.
+POTH_2         PCB Potentiometer Mounted Condutive Plastic, 2x.
+POTH_3         PCB Potentiometer Mounted Condutive Plastic, 3x.
+POTH_4         PCB Potentiometer Mounted Condutive Plastic, 4x.
+POTL_1         PCB Standard Slide Potentiometers 88, 1x.
+POTL_2         PCB Standard Slide Potentiometers 88, 2x.
+POTL_1-1       PCB Standard Slide Potentiometers 69, 1x.
+POTF_1         Standard Potentiometers Carbon Track.
+POTF_1A        Standard Potentiometers Carbon Track.
+
+
+José Vieira
+op19355@mail.telepac.pt
+Escola Secundária de Estremoz
+Portugal

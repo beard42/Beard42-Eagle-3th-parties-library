@@ -1,0 +1,28 @@
+ISO 7816 SmartCard and Socket
+
+I made this library using parts I robbed from a junk webTV reciever.
+
+
+
+
+I have been able to identify the pinout of the chip
+
+Smart Card Pin Description
+
+
+PIN     NAME        FUNCTION
+-------------------------------
+C1------VCC---------Power Supply
+C2------MCLR--------Master Clear 
+C3------RB6/OSC1----Clock Input
+C4------NC----------No Connect
+C5------VSS---------Ground
+C6------NC----------No Connect
+C7------RB7---------DATA I/O
+C8------NC----------No Connect
+
+I'm a newbie with EAGLE so please double check, I don't want you to let the smoke out of something 
+because I marked a pin incorrectly. I think it's OK though.
+
+Ira
+iraborton@msn.com

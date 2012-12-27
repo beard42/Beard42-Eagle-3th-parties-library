@@ -1,0 +1,10 @@
+This is a library for the ETRAX 100LX MCM 2+8 from Axis and other parts
+for building a working Etrax based computer.
+This library is public domain.
+This library is untested and there is no warranty for nothing.
+If you use this library please let me know.
+Additional information is on my website 
+http://www.ramge.de/olaf/axis
+
+April 1, 2003
+Olaf Ramge (olaf@ramge.de)
