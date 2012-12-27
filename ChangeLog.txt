@@ -3,3 +3,27 @@
 
 2012-12-27
   Initial revision
+
+* Bibliotheken von Eagle 5.12 übernohmen
+* austriamicrosystems.lbr nach "Knobs-Buttons-Switches" verschoben
+* con-molex-microsd.lbr, smartcard.lbr, smartwed.lbr und uicc_card_reader.lbr
+  nach "Holders" verschoben
+* intersil.lbr nach "Motor Controllers" verschoben
+* lattice.lbr nach "Processors\Misc" verschoben
+* linear.lbr nach "Vendors\Linear" verschoben
+* national-semiconductor.lbr nach "Vendors\National Semiconductor" verschoben
+* renesas.lbr nach "Processors\Misc" verschoben
+* resistor-bourns.lbr nach "Resistors" verschoben
+* resistor-ruf.lbr nach "Resistors" verschoben
+* rf-micro-devices.lbr nach "Wireless" verschoben
+* smd-special.lbr nach "Other collections" verschoben
++ Neuer Ordner "Voltage Converters\Trafo"
+* trafo.lbr, trafo-bei.lbr, trafo-murata.lbr, trafo-siemens.lbr,
+  trafo-xicon.lbr und trafo2-2.lbr nach "Voltage Converters\Trafo" verschoben
+* Ordner "Vendors\Zilog" nach "Processors\Zilog" verschoben
+* Ordner "Vendors\Xilinx" und "Processors\Xilinx" zusammengefügt
+- Ordner "Vendors\Xilinx" entfernt
+- Ordner "Vendors\NXP" entfernt
+* alps_japan_potentiometers.lbr nach "Potentiometers" verschoben
+- Ordner "Vendors\Alps" entfernt
+* freescale-accelerometer.lbr und freescale_capsense.lbr nach "Sensors" verschoben
