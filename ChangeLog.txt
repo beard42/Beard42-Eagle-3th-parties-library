@@ -1,6 +1,13 @@
 ﻿EAGLE Library ChangeLog
 =======================
 
+2012-12-28
+* gennum.lbr nach "Audio-Video" verschoben
++ Neue Bibliotheken im "Clocks-Crystals-RTC":
+  murata-resonators.lbr
+  murata-resonator-ceralock.lbr
+  murata-cstcc-cstcv-resonators.lbr
+
 2012-12-27
   Initial revision
 
