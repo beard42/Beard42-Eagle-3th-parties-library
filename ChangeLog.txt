@@ -1,6 +1,14 @@
 ﻿EAGLE Library ChangeLog
 =======================
 
+2013-01-03
++ Neues IC im "ADC-DAC\LTC-ADC.lbr" hinzugefügt
+  LTC1859
++ Neues Bibliothek im "Voltage References"
+  vref-nationalsemiconductor.lbr
++ Neues Bibliothek im "Amplifiers"
+  opa350ua.lbr
+
 2013-01-02
 + Neue Bibliotheken im "Vendors\Texas_Instruments"
   CH_TI.lbr
