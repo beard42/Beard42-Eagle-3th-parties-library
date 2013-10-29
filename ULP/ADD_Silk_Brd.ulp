@@ -1,0 +1,26 @@
+string cmd = "GRID mm;\n";
+if (board) board(B) {
+	B.elements(E) {
+		E.texts(T){
+			string h;
+			string mir = "";
+			if(T.mirror){
+				mir = "M";
+				sprintf(h, "Layer 110 bSilk;\nchange layer 110;\n");
+				cmd += h;
+				sprintf(h, "Change Size 0.8124 mm;\n");
+				cmd += h;
+				sprintf(h, "Text '%s' %sR%1.0f (%5.3f %5.3f);\n", T.value, mir, T.angle, u2mm(T.x), u2mm(T.y));
+				cmd += h;}
+			else{
+				mir = "";
+				sprintf(h, "Layer 109 tSilk;\nchange layer 109;\n");
+				cmd += h;
+				sprintf(h, "Change Size 0.8124 mm;\n");
+				cmd += h;
+				sprintf(h, "Text '%s' %sR%1.0f (%5.3f %5.3f);\n", T.value, mir, T.angle, u2mm(T.x), u2mm(T.y));
+				cmd += h;}
+		}
+	}
+	exit (cmd);
+}

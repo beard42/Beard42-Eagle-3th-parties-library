@@ -1,0 +1,372 @@
+/*
+    This program is free software; you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation; either version 2 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program; if not, write to the Free Software
+    Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA  02110-1301  USA
+    
+    Copyright	: 2005 Charalampos Alexopoulos
+    Created	: Oct 14, 2005
+    Version	: 0.1
+*/
+#usage "<b>gedalib</b>\n"
+       "<p>"
+       "<p>used in the library-editor, it convert an Eagle library to a set of gEda compatible sym files"
+       "<author>Author: Charalampos Alexopoulos</author>"
+
+if(!library) {
+   dlgMessageBox(usage + "<hr><b>ERROR: No library!</b><p>\nThis ULP-program can only work in the library editor.");
+   exit(1);
+}
+
+int div = 127;
+int gates = 0;
+int pinnum = 0;
+
+int DumpPIN( UL_PIN Element)
+{
+    int hasCircle = -1;
+    int x1 = Element.x/div;
+    int y1 = Element.y/div;
+    int x2 = x1;
+    int y2 = y1;
+    int nameX,nameY,numberX,numberY,numberAngle,typeX,typeY,nameAlg,numberAlg,typeAlg;
+    int size = Element.length*200;
+    int angle = Element.angle;
+    switch(angle)
+    {
+      case 0:
+        // Left
+        x2 += size;
+	x1 = x2-300;
+	nameX = x2+40;
+	nameY = y1;
+	nameAlg = 0;
+	numberX = x2-40;
+	numberY = y1+30;
+	numberAlg = 6;
+	typeX = x1-50;
+	typeY = y1-50;
+	typeAlg = 6;
+        break;
+      case 180:
+        // Right
+        x2 -=size;
+	x1 = x2+300;
+	nameX = x2-40;
+	nameY = y1;
+	nameAlg = 6;
+	numberX = x2+40;
+	numberY = y1+30;
+	numberAlg = 0;
+	typeX = x1+50;
+	typeY = y1-50;
+	typeAlg = 0;
+        break;
+      case 90:
+        // Down
+        y2 += 200;
+	y1 = y2-300;
+	nameX = x2-80;
+	nameY = y2+40;
+	nameAlg = 0;
+	numberX = x2-50;
+	numberY = y2-40;
+	numberAlg = 8;
+	numberAngle = 0;
+	typeX = x1+50;
+	typeY = y1-50;
+	typeAlg = 0;
+        break;
+      case 270:
+        // Up
+        y2 -= 200;
+	y1 = y2+300;
+	nameX = x2-80;
+	nameY = y2-40;
+	nameAlg = 2;
+	numberX = x2-50;
+	numberY = y2+40;
+	numberAlg = 6;
+	numberAngle = 0;
+	typeX = x1+50;
+	typeY = y1+50;
+	typeAlg = 0;
+        break;
+    }	
+    
+      Element.circles(E) 
+      {
+	hasCircle = 0;
+	
+      }
+    if(!hasCircle)
+    {
+     int cx = 0;
+     int cy = 0;
+     switch(angle)
+    {
+      case 0:
+        cy = y2;
+        cx = x2-50;
+	x2 -= 100;
+        break;
+      case 180:
+        cy = y2;
+	cx = x2+50;
+	x2 += 100;
+        break;
+      case 90:
+        cx = x1;
+	cy = y2+50;
+	y2 += 100;
+        break;
+      case 270:
+        cx = x1;
+	cy = y2-50;
+	y2 -= 100;
+        break;
+    }	
+      printf("V %d %d %d %d %d %d %d %d %d %d %d %d %d %d %d\n",cx,cy,50,6,0,0,0,-1,-1,0,-1,-1,-1,-1,-1);
+    }
+
+    printf("P %d %d %d %d %d %d %d\n",x1,y1,x2,y2,1,0,0); 
+    printf("{\n");
+    
+    int dir = Element.direction;
+    string direction = "";
+    switch(dir)
+    {
+    case 0:
+      direction = "in";
+      break;
+    case 1:
+      direction = "in";
+      break;
+    case 2:
+      direction = "out";
+      break;
+    case 3:
+      direction = "io";
+      break;
+    case 4:
+      direction = "oc";
+      break;
+    case 5:
+      direction = "pwr";
+      break;
+    case 6:
+      direction = "pas";
+      break;
+    case 7:
+      direction = "tri";
+      break;
+    case 8:
+      direction = "in";
+      break;
+    }
+    printf("T %d %d %d %d %d %d %d %d %d\n",typeX,typeY,5,8,0,1,0,typeAlg,1);
+    printf("pintype=%s\n",direction);
+  if(Element.contact)
+  {
+    printf("T %d %d %d %d %d %d %d %d %d\n",numberX,numberY,5,8,1,1,numberAngle,numberAlg,1);
+    printf("pinnumber=%s\n",Element.contact.name);
+    printf("T %d %d %d %d %d %d %d %d %d\n",numberX,numberY,5,8,1,1,numberAngle,numberAlg,1);
+    printf("pinseq=%s\n",Element.contact.name);
+  }
+    printf("T %d %d %d %d %d %d %d %d %d\n",nameX,nameY,3,8,1,1,0,nameAlg,1);
+    printf("pinlabel=%s\n", Element.name );
+  Element.texts(E) {
+  UL_TEXT text = E;
+  int x = Element.x/div;
+  int y = Element.y/div;
+  int angle = Element.angle;
+  }
+  printf("}\n");
+  return 0;
+}
+
+
+int DumpSYMBOL( UL_SYMBOL Element)
+{
+  int x1,x2,y1,y2;
+  UL_AREA area = Element.area;
+  x1 = area.x1 /div;
+  x2 = area.x2/div;
+  y1 = area.y1/div;
+  y2 = area.y2/div; 
+
+  Element.circles(E) 
+  {
+    
+  }
+  Element.wires(E) {
+  if(E.arc)
+  {
+  	UL_ARC arc = E.arc;
+  	int xc = arc.xc/div;
+	int yc = arc.yc/div;
+	int radius = arc.radius/div;
+	real sweep = arc.angle2 - arc.angle1;
+  	
+  	printf("A %d %d %d %3.0f %3.0f %d %d %d %d %d %d\n",xc,yc,radius,arc.angle1,sweep,3,0,0,0,-1,-1);
+  }else
+  {
+    UL_WIRE wire = E;
+    x1 = wire.x1/div;
+    x2 = wire.x2/div;
+    y1 = wire.y1/div;
+    y2 = wire.y2/div;
+
+    printf("L %d %d %d %d %d %d %d %d %d %d\n",x1,y1,x2,y2,3,0,0,0,-1,-1 );
+   }
+  }
+  Element.rectangles(E) 
+  {
+
+  }
+  Element.pins(E) 
+  {
+    DumpPIN( E);
+  }
+  return 0;
+}
+
+
+int DumpGATE( UL_GATE Element)
+{
+  DumpSYMBOL( Element.symbol);
+  return 0;
+}
+
+
+int DumpDEVICE( UL_DEVICE Element)
+{
+  UL_AREA area = Element.area;
+  int x1 = area.x1 /div;
+  int x2 = area.x2/div;
+  int y1 = area.y1/div;
+  int y2 = area.y2/div;
+  int attY = y1;
+  
+  printf("v 20050820 1\n");
+ 
+  printf("T %d %d %d %d %d %d %d %d %d\n",x1+50,y1,9,10,1,0,0,0,1);
+  printf("%s\n",Element.name );
+  printf("T %d %d %d %d %d %d %d %d %d\n",x1+50,y2,5,10,0,0,0,0,1);
+  printf("device=%s\n",Element.name );
+  printf("T %d %d %d %d %d %d %d %d %d\n",x1+50,y2+100,5,10,0,0,0,0,1);
+  printf("footprint=%s\n",Element.package.name );
+  string ref = Element.prefix;
+  if(ref == "IC")
+  {
+    ref = "U";
+  }
+  printf("T %d %d %d %d %d %d %d %d %d\n",x1,y2,8,10,1,1,0,0,1);
+  printf("refdes=%s\n",ref+"?" );
+/* 
+  gates = 0;
+  pinnum = 0;
+  int count = 0;
+  string symbolname = "";
+  string pinnames[];
+  string tmppinnums[];
+  string pinnums[];
+  string slotdef = "";
+  Element.gates(E) 
+  {
+	  if(symbolname == "")
+	  {
+		  gates++;
+		  symbolname = E.symbol.name;
+		  DumpGATE( E);
+		  
+		  E.symbol.pins(p)
+		  {
+			  pinnum++;
+			  count++;
+			  pinnames[pinnum] = p.name;
+			  pinnums[pinnum] = p.contact.name;
+			  tmppinnums[pinnum] = p.contact.name;
+		  }
+		 
+	  }else
+	  {
+		  count = 0;
+		  if(symbolname == E.symbol.name)
+		  {
+			  gates++;
+			  E.symbol.pins(p)
+			  {
+				  count++;
+				  for(int i=1;i<pinnum+1;i++)
+				  {
+					  if(p.name == pinnames[i])
+					  {
+						  tmppinnums[i] = p.contact.name;
+					  }
+				  }
+			  }
+		  }else
+		  {
+			DumpGATE( E);
+		  }
+	  }
+	  if(count == pinnum)
+	  {
+		  slotdef = "";
+		  for(int i=1;i<pinnum+1;i++)
+		  {
+			  slotdef += tmppinnums[i]+","; 	
+		  }
+		  attY += 200;
+		  printf("T %d %d %d %d %d %d %d %d %d\n",x1,attY,5,10,0,0,0,0,1);
+		  slotdef = strsub(slotdef,0,strrchr(slotdef,','));
+		  printf("slotdef=%d:%s\n",gates,slotdef);
+	  }
+	  //printf("Gate %d %s\n",gates,E.name);
+	  //printf("Symbol %d %s\n",gates,E.symbol.name);
+    
+  }
+  attY += 200;
+  printf("T %d %d %d %d %d %d %d %d %d\n",x1,attY,5,10,0,0,0,0,1);
+  printf("numslots=%d\n",gates);
+  */
+  
+  
+  Element.gates(E) 
+  {
+    DumpGATE( E);
+  }
+  return 0;
+}
+
+
+library(L)
+{
+  string strFilename="/library.txt";
+  string dirName = "";
+  int pos = strrchr(L.name, '.');
+  if (pos >= 0)
+  {
+    dirName = strsub(L.name, 0, pos)+"/";
+  }
+  L.devices(E) 
+  {
+     strFilename = dirName+E.name+".sym";
+     output(strFilename)
+     {
+       DumpDEVICE( E );
+     }  
+  }
+}
+
+

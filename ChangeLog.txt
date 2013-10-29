@@ -1,6 +1,28 @@
 ﻿EAGLE Library ChangeLog
 =======================
 
+???
++ Neue ULP's
+* Von "LED" nach "LED\drivers" verschoben
+  cypressledxx.lbr
+  st2221x.lbr
+  supertex.lbr
+  tcl5940.lbr
+* Von "LED" nach "Serial" verschoben:
+  tsop.lbr
+  vishay_tsal4400_bpw85c.lbr
+* Von "LED" nach "LCD" verschoben
+  dd-9664fs-2a.lbr
+  display-hp.lbr
+  fichte_div.lbr
+  kingbright.lbr
+  led-7-segment.lbr
+* Von "Audio-Video" nach "Vendors\AD" verschoben
+  ad74111_adg3304.lbr
+* Von "Valves" nach "Vacuum Tubes" verschoben
+  valves2.lbr
+- Ordner "Valves" entfernt
+
 2013-01-03
 + Neues IC im "ADC-DAC\LTC-ADC.lbr" hinzugefügt
   LTC1859

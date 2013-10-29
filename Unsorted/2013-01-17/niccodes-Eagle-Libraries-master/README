@@ -1,0 +1,30 @@
+Repository for Cadsoft Eagle library files.
+
+Only a fool trusts a package she hasn't made or at least carefully verified herself.  This collection is provided with absolutely no guarantees of correctness.
+
+Clone the library for the first time:
+Install git, get a github account, set up your SSH keys and configuration then fork the library. 
+
+This will create a fork of the Eagle Libraries under you list of Repositories.  Next:
+
+$ git clone git@github.com:yourGitHubUsername/Eagle-Libraries.git
+
+Then, because this repository contains a submodule (The Adafruit library) you need to:
+
+$ cd Eagle-Libraries
+$ git submodule init
+$ git submodule update
+
+Once you've got a local copy of the libraries, you can make changes.
+
+If you add a new library file, you'll need to tell git to add it to the repo with:
+
+$ git add Category/manufacturer.lbr
+
+After you've made your changes, you can commit them to the local repp with:
+
+$ git commit -am "Message describing what you've changed."
+
+Then, you can upload those changes to the GitHub version of the repo with:
+
+$ git push origin master
