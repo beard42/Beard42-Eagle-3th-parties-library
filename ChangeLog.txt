@@ -1,7 +1,9 @@
 ﻿EAGLE Library ChangeLog
 =======================
 
-???
+2014-08-25
+* Sämtliche Änderungen, da es wurden mehrere Bibliotheken hinzugefügt.
+
 + Neue ULP's
 * Von "LED" nach "LED\drivers" verschoben
   cypressledxx.lbr
